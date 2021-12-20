@@ -1,0 +1,45 @@
+
+<div class="login_section">
+	<div class="login_form_wrapper">
+		<div class="container">
+		  	<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<div class="section-heading">
+						<h2>Connexion a votre compte</h2>
+						<p>Merci de vous connecter pour acceder a la partie admin du site.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<form action="/user/login" method="POST">
+						<div class="login_wrapper">
+							<%- include('partials/messages') %>
+							<div class="formsix-pos">
+								<div class="form-group i-email">
+									<input type="email" class="form-control" required="" id="email"
+									name="email" placeholder="Nom de compte *">
+								</div>
+							</div>
+							<div class="formsix-e">
+								<div class="form-group i-password">
+									<input type="password" class="form-control" required="" id="password"
+									name="password" placeholder="Mot de passe *">
+								</div>
+							</div>
+							<div class="login_remember_box">
+								<label class="control control--checkbox">Se souvenir de moi ?
+									<input type="checkbox">
+									<span class="control__indicator"></span>
+								</label>
+							</div>
+							<div class="login_btn_wrapper">
+								<button type="submit" class="btn btn-primary">Connexion</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,101 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Ammu Nation - Storylife</title>
+		<meta name="description" content="">
+		<link rel="shortcut icon" type="image/icon" href="favicon.png" />
+		<link rel="stylesheet" href="assets/css/allplugins.css">
+		<link rel="stylesheet" href="assets/style.css">
+		<link rel="stylesheet" href="assets/css/responsive.css">
+		<link rel="stylesheet" href="assets/css/custom.css">
+		<script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+	</head>
+	<body>
+		<header style="height: 160px;">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-2 col-sm-2 col-xs-12">
+						<div class="logo-area">
+							<a href="/"><img src="assets/images/logo/mashallah-wllh1.png" style="max-width: 100%;" /></a>
+						</div>
+					</div>
+					<div class="col-md-10 col-sm-10 hidden-xs">
+						<div class="main-header">
+							<div class="main-menus">
+								<nav>
+									<ul class="mamnu">
+										<li><a href="/">Accueil</a></li>
+										<li><a href="/about">A propos</a></li>
+										<li><a href="/products">produits</a></li>
+										<li><a href="/events">evenements</a></li>
+										<li><a href="/services">services</a></li>
+										<!--<li><a href="/contact">Contact</a></li>-->
+										<% if (user) {%>
+										<li>
+											<a href="#" class="btn1"><%= user.email %></a>
+											<ul>
+												<% if (user.role > 0) { %>
+													<li><a href="/admin">Administration</a></li>
+												<% } %>
+												<li><a href="/user/logout">Deconnexion</a></li>
+											</ul>
+										</li>
+										<% } %>
+									</ul>
+								</nav>
+							</div>
+							<% if (!user) {%>
+								<div class="sing-in-btn">
+									<a href="/user/login" class="btn1">Connexion</a>
+								</div>
+							<% } %>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header><br /><br /><br /><br /><br /><br />
+		<%- body %>
+		<script src="assets/js/vendor/jquery-3.2.1.min.js"></script>
+		<script src="assets/js/tether.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/owl.carousel.min.js"></script>
+		<script src="assets/js/jquery.bxslider.min.js"></script>
+		<script src="assets/js/isotope.pkgd.min.js"></script>
+		<script src="assets/js/jquery.magnific-popup.min.js"></script>
+		<script src="assets/js/jquery.meanmenu.js"></script>
+		<script src="assets/js/jarallax.min.js"></script>
+		<script src="assets/js/jquery-ui.min.js"></script>
+		<script src="assets/js/jquery.waypoints.min.js"></script>
+		<script src="assets/js/jquery.counterup.min.js"></script>
+		<script src="assets/js/masonry.pkgd.min.js"></script>
+		<script src="assets/js/jquery.bootstrap-touchspin.min.js"></script>
+		<script src="assets/js/jquery.downCount.js"></script>
+		<script src="assets/js/wow.min.js"></script>
+		<script src="assets/js/slick.min.js"></script>
+		<script src="assets/js/plugins.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+			function initMap() {
+				var uluru = {
+					lat: -36.742775,
+					lng: 174.731559
+				};
+				var map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 15,
+					scrollwheel: false,
+					center: uluru
+				});
+				var marker = new google.maps.Marker({
+					position: uluru,
+					map: map
+				});
+			}
+		</script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmdG8C6ItElq5ipuFv6O9AE48wyZm_vqU&amp;callback=initMap">
+		</script>
+	</body>
+</html>

@@ -1,0 +1,54 @@
+<section class="blog-area section bg-img jarallax">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<div class="section-heading">
+					<a href="/"><img src="assets/images/logo/final_ammu2.png" style="max-width: 60%;" /></a>
+					<!--<h2>Dernieres nouvelles</h2>-->
+					<p>Leader dans la ville de Los Santos depuis 1963 </p>
+						<p> Fabricant d'armes - et raisons de posséder des armes, l'Ammu Nation a défendu avec zèle le profit des armes depuis plus de 50 ans. </p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-sm-12 col-xs-12 pd-0">
+			<div class="news_left_wrapper">
+				<div class="news_left_img_overlay"></div>
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="news_left_cont">
+								<p><i></i></p>
+								<h6><i class="fa fa-calendar-alt"></i>29-Jan-2017</h6>
+								<h3>Weapon Services - 2017</h3>
+								<h5><a href="#">Read More</a> &nbsp;<i class="fa fa-long-arrow-alt-right"></i></h5>
+							</div>
+						</div>	
+					</div>	
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12 col-xs-12 pd-0">
+				<div class="ln-sliders">
+					<% for (let i = 0; i < news.length; i++) { const element = news[i]; %>
+						<div class="col-sm-12">
+							<div class="main_news_right_box">
+									 <div class="news_right_box1_wrapper">
+										 <div class="news_right_box1">
+											 <p></p>
+											 <h3><%= element.title %></h3>
+											 <h6><i class="fa fa-calendar-alt"></i><%= element.updatedAt %></h6>
+											 <div class="news_border_bottom">
+											 </div>
+										 </div>
+									 </div>
+									 <div class="news_botton_cont">
+										 <p><%= element.content %></p>
+										 <h5><a href="#">Voir plus</a> &nbsp;<i class="fa fa-long-arrow-alt-right"></i></h5>
+									 </div>
+								 </div>	
+						 </div>
+					<% } %>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
