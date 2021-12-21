@@ -2525,32 +2525,48 @@ margin-top:50px;
 }
 .slider-area .item-content .item-slider.items1 {
 	position:relative;
-  background: url(images/sliders/1.jpg);
-}
-.slider-area .item-content .item-slider.items2 {
-	position:relative;
-  background: url(images/sliders/2.jpg);
-}
-.slider-area .item-content .item-slider.items3 {
-	position:relative;
-  background: url(images/sliders/3.jpg);
-}
-.slider-area .item-content .item-slider.items4 {
-	position:relative;
-  background: url(images/sliders/4.jpg);
+  background: url(images/photos/hhhhhhhhhhhhhhhhhhhhhhhhhhh.png);
 }
 .slider-area .item-content .item-slider .contents {
   height: 130vh;
   vertical-align: middle;
   display: table-cell;
 }
+
 @media only screen and (max-width: 992px) {
-  .slider-area .item-content .item-slider .contents {
-    height: 100vh;
-    padding-top: 160px;
-  }
+	.slider-area .item-content .item-slider .contents {
+		height: 100vh;
+		padding-top: 160px;
+	}
+	#convictsaa {
+		margin-top: -100px !important;
+	}
+	#logo {
+		width: 83px;
+		height: 84px;
+		/*margin-top: 5%;*/
+	}
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 850px) {
+	#logo {
+		width: 320px !important;
+		height: 85px !important;
+		margin-top:	10%;
+		background: url(images/logo/panel-Storylife_convicts.png);
+		background-repeat: no-repeat;
+	}
+}
+@media only screen and (max-width: 850px) {
+	#convictsaa {
+		margin-top: -100px !important;
+	}
+	#logo {
+		max-width: 100%;
+		max-height: 100%;
+		margin-top: 5%;
+		background: url(images/photos/logo.png);
+		background-repeat: no-repeat;
+	}
   .slider-area .item-content .item-slider .contents {
     padding-top: 125px;
   }
@@ -5950,7 +5966,6 @@ padding:0 20px 0 0px;}
 }
 .login_form_wrapper p{
 	width:70%;
-	text-transform:capitalize;
 	text-align:center;
 	margin:0px auto;
 	font-size:14px;

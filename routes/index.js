@@ -31,4 +31,12 @@ router.get('/events', (req, res) => res.render('events', {
 	user: req.user
 }))
 
+router.get('/gallery', (req, res) => res.render('gallery', {
+	user: req.user
+}))
+
+router.get('/pictures', (req, res) => res.render('pictures', {
+	user: req.user
+}))
+
 module.exports = router
