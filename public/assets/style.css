@@ -448,6 +448,19 @@ h4 {
 /*  background-color: #111;*/
   
 }
+
+@media only screen and (min-width: 1400px) {
+	#convictsaa {
+		margin-top: -400px !important;
+	}
+}
+
+@media only screen and (max-width: 1401px) {
+	#convictsaa {
+	 	margin-top: -300px !important;
+	}
+}
+
 @media only screen and (max-width: 992px) {
   .section {
     padding: 75px 0;
@@ -2546,7 +2559,19 @@ margin-top:50px;
 		height: 84px;
 		/*margin-top: 5%;*/
 	}
+	#ricard_logo {
+		max-width: 100% !important;
+		max-height: 100% !important;
+		height: 100%;
+		width: 100%;
+	}
 }
+@media only screen and (min-width: 768px) {
+	.mobile-menu {
+		display: none;
+	}
+}
+
 @media only screen and (min-width: 850px) {
 	#logo {
 		width: 320px !important;
@@ -2556,25 +2581,23 @@ margin-top:50px;
 		background-repeat: no-repeat;
 	}
 }
-@media only screen and (max-width: 850px) {
-	#convictsaa {
-		margin-top: -100px !important;
-	}
-	#logo {
-		max-width: 100%;
-		max-height: 100%;
-		margin-top: 5%;
-		background: url(images/photos/logo.png);
-		background-repeat: no-repeat;
-	}
-  .slider-area .item-content .item-slider .contents {
-    padding-top: 125px;
-  }
-  header .main-header{
-	      line-height: 128px;
-		  height:0;
-  }
+
+#mobilenav {
+	/*display: none;*/
+	display: flex;
+	flex-direction: column;
+	background: rgba(46, 46, 46, 0.5);
+	position: absolute;
+	padding: 15px;
+    right: 10px;
+    top: 80px;
 }
+
+#mobilenav a {
+	margin: 5px 10px;
+	color: #FFF;
+}
+
 .slider-area .item-content .item-slider .contents h2 {
   display: block;
   font-family: "Audiowide", cursive;
@@ -6979,4 +7002,31 @@ margin-right:8px;
     position: absolute;
     top: -201px;
 	}
+}
+
+@media only screen and (max-width: 850px) {
+	.gallery-area .gimg figure .content {
+		top: 18px;
+	}
+	.gallery-area .gimg figure .content p {
+		font-size: 10px;
+		padding-right: 10px;
+	}
+	#convictsaa {
+		margin-top: -100px !important;
+	}
+	#logo {
+		max-width: 100%;
+		max-height: 100%;
+		margin-top: 5%;
+		background: url(images/photos/logo.png);
+		background-repeat: no-repeat;
+	}
+  .slider-area .item-content .item-slider .contents {
+    padding-top: 125px;
+  }
+  header .main-header{
+	      line-height: 128px;
+		  height:0;
+  }
 }

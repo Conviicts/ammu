@@ -12,16 +12,40 @@
 		<link rel="stylesheet" href="assets/style.css">
 		<link rel="stylesheet" href="assets/css/responsive.css">
 		<link rel="stylesheet" href="assets/css/custom.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+		<script>
+			function myFunction() {
+				var x = document.getElementById("mobilenav");
+				if (x.style.display === "flex") {
+					x.style.display = "none";
+				} else {
+					x.style.display = "flex";
+				}
+			}
+		</script>
 	</head>
 	<body>
 		<header style="height: 160px;">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-2 col-sm-2 col-xs-12">
+					<div class="col-md-2 col-sm-2 col-xs-12" style="display: flex;flex-direction: row;">
 						<div class="logo-area">
 							<a href="/"><div id="logo"></div></a>
 						</div>
+						<div class="mobile-menu" style="border-radius: 3px;background-color: #d82414;position: absolute;right: 20px;top: 35%;width: 40px;align-items: center;text-align: center;">
+							<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+								<i class="fa fa-bars" style="margin-top: 2px;font-size: 30px;color: #FFF;"></i>
+							  </a>
+						</div>
+						<div id="mobilenav" style="display:none;">
+							<a href="/">Accueil</a>
+							<a href="/about">A propos</a>
+							<a href="/products">Produits</a>
+							<a href="/Formation">Formation PPA</a>
+							<a href="/gallery">Stand de tir</a>
+							<a href="/pictures">Présentation</a>
+						  </div>
 					</div>
 					<div class="col-md-10 col-sm-10 hidden-xs">
 						<div class="main-header">
@@ -30,9 +54,10 @@
 									<ul class="mamnu">
 										<li><a href="/">Accueil</a></li>
 										<li><a href="/about">A propos</a></li>
-										<li><a href="/products">produits</a></li>
+										<li><a href="/formation">Formation PPA</a></li>
+										<li><a href="/products">Produits</a></li>
 										<li><a href="/gallery">Stand de tir</a></li>
-										<li><a href="/pictures">Photos</a></li>
+										<li><a href="/pictures">Présentation</a></li>
 										<!--<li><a href="/contact">Contact</a></li>-->
 										<% if (user) {%>
 										<li>

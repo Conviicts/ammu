@@ -19,6 +19,10 @@ router.get('/services', (req, res) => res.render('training', {
 	user: req.user
 }))
 
+router.get('/formation', (req, res) => res.render('formation', {
+	user: req.user
+}))
+
 router.get('/about', (req, res) => res.render('about', {
 	user: req.user
 }))
