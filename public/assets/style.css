@@ -759,9 +759,9 @@ h4 {
 }
 
 .bg-img {
-  background-size: cover !important;
+  /*background-size: cover !important;*/
   background-repeat: no-repeat !important;
-  background-position: center center !important;
+  background-position: center -46% !important;
   background: #000;
   padding-top: 100px;
 }
@@ -2538,7 +2538,9 @@ margin-top:50px;
 }
 .slider-area .item-content .item-slider.items1 {
 	position:relative;
-  background: url(images/photos/hhhhhhhhhhhhhhhhhhhhhhhhhhh.png);
+	/* background: url(images/photos/hhhhhhhhhhhhhhhhhhhhhhhhhhh.png); */
+	background: url(images/photos2/richardlpb.png);
+	background-size: contain;
 }
 .slider-area .item-content .item-slider .contents {
   height: 130vh;
@@ -2572,12 +2574,25 @@ margin-top:50px;
 	}
 }
 
+@media only screen and (max-width: 850px) {
+	.bg-img {
+		background-size: cover !important;
+		background-repeat: no-repeat !important;
+		background-position: center center !important;
+		background: #000;
+		padding-top: 100px;
+	}
+	.slider-area .item-content .item-slider.items1 {
+		background-size: cover !important;
+	}
+}
+
 @media only screen and (min-width: 850px) {
 	#logo {
 		width: 320px !important;
 		height: 85px !important;
 		margin-top:	10%;
-		background: url(images/logo/panel-Storylife_convicts.png);
+		background: url(images/logo/13.png);
 		background-repeat: no-repeat;
 	}
 }

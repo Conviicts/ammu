@@ -4,7 +4,7 @@ module.exports = {
       return next()
     }
     req.flash('error_msg', 'Veuillez vous connecter pour acceder à cette partie du site')
-    res.redirect('/users/login')
+    res.redirect('/user/login')
   },
   forwardAuthenticated: (req, res, next) => {
     if (!req.isAuthenticated()) {

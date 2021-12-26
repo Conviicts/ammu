@@ -1,0 +1,47 @@
+<br /><br /><br /><br /><br /><br />
+<section class="about-area section bg-img jarallax" style="height: 1380px;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<div class="section-heading">
+					<h2>Questionnaire</h2>
+					<p></p>
+				</div>
+			</div>
+			<div class="col-md-12 col-sm-12 " style="height:  900px;">
+				<div style="text-align: center;">
+					<div class="login_wrapper" style="color:#FFF;">
+						<%- include('partials/messages') %>
+						<form action="/survey2" method="POST">
+							<center>
+							<div style="background-color: rgba(0, 0, 0, 0.3);border-radius: 10px;">
+									
+								<br><div style="background-color: rgba(0, 0, 0, 0.3);border-radius: 10px;"><br>
+									<div class="formsix-e">
+										<label style="color: #FFF;font-weight: 500">Combien il y a de règles de sécurité ?</label>
+										<div class="form-group i-password" style="width: 70%">
+											<div>
+												<input autocomplete="off" type="radio" id="yes1" name="drone" value="yes1">
+												<label for="4">4</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												<input autocomplete="off" type="radio" id="no1" name="drone" value="no1">
+												<label for="no1">Non</label>
+											</div>
+										</div>
+									</div>
+								
+								</div>
+
+
+
+							</center>
+							<br>
+							<div class="login_btn_wrapper">
+								<button type="submit" class="btn btn-primary">Continuer</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,112 @@
+<br /><br /><br /><br /><br /><br />
+<section class="about-area section bg-img jarallax" style="height: 1380px;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<div class="section-heading">
+					<h2>Questionnaire</h2>
+					<p></p>
+				</div>
+			</div>
+			<div class="col-md-12 col-sm-12 " style="height:  900px;">
+				<div style="text-align: center;">
+					<div class="login_wrapper" style="color:#FFF;">
+						<%- include('partials/messages') %>
+						<form action="/survey2" method="POST">
+							<center>
+							<div style="background-color: rgba(0, 0, 0, 0.3);border-radius: 10px;">
+									<br>
+									<div class="formsix-e">
+										<label for="key" style="color: #FFF;font-weight: 500">Nom et prénom : </label>
+										<div class="form-group i-password" style="width: 70%">
+											<input autocomplete="off" type="text" class="form-control" required="" id="q1" name="q1" style="color: #FFF">
+										</div>
+									</div>
+									<div class="formsix-e">
+										<label for="key" style="color: #FFF;font-weight: 500">Date de naissance : </label>
+										<div class="form-group i-password" style="width: 70%">
+											<input autocomplete="off" type="text" class="form-control" required="" id="q2" name="q2" style="color: #FFF">
+										</div>
+									</div>
+									<br>
+								</div>
+
+								<br><div style="background-color: rgba(0, 0, 0, 0.3);border-radius: 10px;"><br>
+									<div class="formsix-e">
+										<label for="key" style="color: #FFF;font-weight: 500">Pourquoi voulez-vous avoir votre PPA ?</label>
+										<p>Développez votre réponse, des questions pourront être posées à la remise du test. </p>
+										<!--<div class="form-group i-password" style="width: 60%">-->
+											<textarea name="ppawhy" id="q3" cols="30" rows="10" class="about-area" style="height: 200px;width: 600px;border-radius: 5px;"></textarea>></textarea>
+										<!--</div>-->
+									</div><br>
+								</div>
+
+								<br><div style="background-color: rgba(0, 0, 0, 0.3);border-radius: 10px;"><br>
+									<div class="formsix-e">
+										<label style="color: #FFF;font-weight: 500">Consentez-vous à utiliser votre arme de manière modérée et dans des cas d'extrême urgence ?</label>
+										<div class="form-group i-password" style="width: 70%">
+											<div>
+												<input autocomplete="off" type="radio" id="q4_1" name="drone" value="0">
+												<label for="q4_1">Oui</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												<input autocomplete="off" type="radio" id="q4_2" name="drone" value="1">
+												<label for="q4_2">Non</label>
+											</div>
+										</div>
+									</div>
+								
+
+									<div class="formsix-e">
+										<label style="color: #FFF;font-weight: 500">Avez-vous lu au préalable les règles sur le port d'armes ainsi que son utilisation ?</label>
+										<div class="form-group i-password" style="width: 70%">
+											<div>
+												<input autocomplete="off" type="checkbox" id="q5_1" name="drone" value="0">
+												<label for="q5_1">Oui</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												<input autocomplete="off" type="checkbox" id="q5_2" name="drone" value="1">
+												<label for="q5_2">Non</label>
+											</div>
+										</div>
+									</div>
+
+									<div class="formsix-e">
+										<label style="color: #FFF;font-weight: 500">Consentez-vous à ne pas réussir le test du PPA et/ou perdre votre licence en cas de faute(s) grave(s) ou copié/collé ?</label>
+										<div class="form-group i-password" style="width: 70%">
+											<div>
+												<input autocomplete="off" type="checkbox" id="q6_1" name="drone" value="0">
+												<label for="q6_1">Oui</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												<input autocomplete="off" type="checkbox" id="q6_2" name="drone" value="1">
+												<label for="q6_2">Non</label>
+											</div>
+										</div>
+									</div><br>
+								</div>
+
+								<!-- <div class="formsix-e">
+									<label style="color: #FFF;font-weight: 500">Combien il y a de règles de sécurité ? </label>
+									<div class="form-group i-password" style="width: 70%;color:#FFF;">
+										<div>
+											<input autocomplete="off" type="checkbox" id="4" name="drone" value="4">
+											<label for="4">4</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											<input autocomplete="off" type="checkbox" id="6" name="drone" value="6">
+											<label for="6">6</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											<input autocomplete="off" type="checkbox" id="8" name="drone" value="8">
+											<label for="8">8</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											<input autocomplete="off" type="checkbox" id="3" name="drone" value="3">
+											<label for="3">3</label>
+										</div>
+									</div>
+								</div> -->
+
+
+
+							</center>
+							<br>
+							<div class="login_btn_wrapper">
+								<button type="submit" class="btn btn-primary">Continuer</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

@@ -2,6 +2,7 @@ const express = require('express')
 const router = express.Router()
 const { ensureAuthenticated } = require('../config/auth')
 const News = require('../models/web/News')
+const Key = require('../models/web/Key')
 
 // Welcome Page
 router.get('/', (req, res) =>  { 
@@ -10,7 +11,7 @@ router.get('/', (req, res) =>  {
 		news.forEach(neww => {
 			neww.content = neww.content.substr(1, 70)
 		});
-		res.render('welcome', { user: req.user, news }) 
+		res.render('welcome', { user: req.user }) 
 	})
     .catch(err => console.error(err))
 })
@@ -42,5 +43,26 @@ router.get('/gallery', (req, res) => res.render('gallery', {
 router.get('/pictures', (req, res) => res.render('pictures', {
 	user: req.user
 }))
+
+router.get('/survey', (req, res) => res.render('survey', {
+	user: req.user
+}))
+
+router.post('/survey', (req, res, next) => {
+	Key.findAll({ where: { key: req.body.key }})
+    .then(key => {
+		if (!key || key == "")
+			res.render('survey', { user: req.user })
+		else
+			res.render("survey2", { user: req.user });
+	})
+    .catch(err => console.error(err))
+})
+
+router.post('/survey2', (req, res, next) => {
+	console.log(req.body);
+	res.render('survey3', { user: req.user })
+})
+
 
 module.exports = router
